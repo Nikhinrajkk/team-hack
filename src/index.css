@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -70,4 +69,39 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+body {
+  margin: 0;
+  background: #0d0d0d;
+}
+
+.ball {
+  background-color: #de5327;
+  --size: 0.15;
+
+  aspect-ratio: 1;
+  width: calc(100% * var(--size));
+  filter: blur(5vw);
+
+  border-radius: 50%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* transform-origin: 50% 50%; */
+
+  opacity: 0.7;
+}
+
+.glow-container {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: fixed;
+
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
 }
