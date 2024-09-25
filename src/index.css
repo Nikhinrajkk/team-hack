@@ -120,7 +120,7 @@ body {
 .ball {
   --delay: 0s;
   --size: 0.1;
-  --speed: 40s;
+  --speed: 90s;
 
   aspect-ratio: 1;
   width: 200px;
@@ -136,7 +136,7 @@ body {
 
   animation: loop var(--speed) infinite linear;
   animation-delay: var(--delay);
-  transform-origin: 50% 50%;
+  transform-origin: 150% 100%;
 
   opacity: 0.6;
 }
@@ -144,7 +144,7 @@ body {
 .ball1 {
   --delay1: -10s;
   --size1: 0.12;
-  --speed1: 45s;
+  --speed1: 60s;
   aspect-ratio: 1;
   width: 300px;
 
@@ -167,10 +167,10 @@ body {
 .ball2 {
   --delay2: -12s;
   --size2: 0.18;
-  --speed2: 50s;
+  --speed2: 80s;
 
   aspect-ratio: 1;
-  width: 400px;
+  width: 350px;
 
   background: linear-gradient(259.53deg, #de5327 6.53%, #de5327 95.34%);
   filter: blur(10vw);
