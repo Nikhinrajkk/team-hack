@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import GenerateQuestion from "./pages/generate";
 
 import "./App.css";
+import Questions from "./pages/questions";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
         <Route path="/generate-questions" element={<GenerateQuestion />} />
+        <Route path="/questions" element={<Questions />} />
       </Routes>
     </Layout>
   );
